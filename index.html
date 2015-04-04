@@ -7,6 +7,10 @@
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/base.css">
+
+    <script src="js/jquery.js"></script>
+    <script src="js/underscore.js"></script>
+    <script src="js/main.js"></script>
 </head>
 <body>
     <!--
@@ -70,6 +74,7 @@
         </div>
     </div>
     !-->
+    <!--
     <div class="animation-contain">
         <img class="display-background-img" src="http://img5.duitang.com/uploads/item/201112/19/20111219083341_2P55n.thumb.700_0.jpg">
         <div class="animation-slide-from-right animation-play-slow display-title-img display-title-up">
@@ -77,6 +82,15 @@
         </div>
         <div class="animation-slide-from-bottom animation-play-slow display-title display-title-center-down-x4">
             <p class="animation-transparent-up animation-play-slow title-font-white title-font-middle-small title-context-max-width display-title-background">12瓦厄齐尔se7cccdfseccdfeeerrg散打王而且你无法玩道具歌舞团我看人gsssdfcccd8890</p>
+        </div>
+    </div>
+    !-->
+
+
+    <div class="template-change-animation">
+        <div class="template-change-cover animative">
+        </div>
+        <div class="template-change-covered animative">
         </div>
     </div>
 
@@ -90,7 +104,7 @@
             <p class="animation-slide-from-right animation-play-fast display-title-background title-font-bold title-font-large title-font-white"><%= obj.large_title%></p>
         </div>
         <div class="animation-brake-inverse animation-play-middle display-title display-title-down display-title-align-left">
-            <p class="display-title-background title-font-bold title-font-middle title-font-white"><%= obj.small-title%></p>
+            <p class="display-title-background title-font-bold title-font-middle title-font-white"><%= obj.small_title%></p>
         </div>
     </div>
 </script>
@@ -125,7 +139,7 @@
 <script type="text/html" id="for">
     <div class="animation-contain">
         <img class="display-background-img" src="<%= obj.background_img%>">
-        <div class="animation-transparent-up animation-play-slow display-title-img display-title-up">
+        <div class="animation-slide-from-left animation-play-slow display-title-img display-title-up">
             <img src="<%= obj.show_img%>">
         </div>
         <div class="animation-slide-from-bottom animation-play-slow display-title display-title-center-down-x4">
