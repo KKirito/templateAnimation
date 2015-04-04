@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>template Animation demo</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+    <!--
+    <div class="animation-contain">
+        <img class="display-background-img" src="http://img5.duitang.com/uploads/item/201112/19/20111219083341_2P55n.thumb.700_0.jpg">
+        <div class="display-title display-title-up display-title-align-right">
+            <p class="animation-elasticity animation-play-middle-fast display-title-background title-font-bold title-font-large title-font-white">this is a title</p>
+        </div>
+        <div class="animation-brake-inverse animation-play-middle display-title display-title-down display-title-align-left">
+            <p class="display-title-background title-font-bold title-font-middle title-font-white">this is the second title</p>
+        </div>
+    </div>
+    !-->
+
+</body>
+
+<script type="text/html" id="fir">
+    <div class="animation-contain">
+        <img class="display-background-img" src="<%= obj.background_img%>">
+        <div class="display-title display-title-up display-title-align-right">
+            <p class="animation-elasticity animation-play-middle-fast display-title-background title-font-bold title-font-large title-font-white"><%= obj.large_title%></p>
+        </div>
+        <div class="animation-brake-inverse animation-play-middle display-title display-title-down display-title-align-left">
+            <p class="display-title-background title-font-bold title-font-middle title-font-white"><%= obj.small-title%></p>
+        </div>
+    </div>
+</script>
+
+</html>
